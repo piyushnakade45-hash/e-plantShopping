@@ -1,0 +1,132 @@
+/* ---------- General ---------- */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f9f7;
+}
+
+/* ---------- Landing page (background image) ---------- */
+.landing-page {
+  background-image: url('https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1600');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.landing-page h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+.about-us {
+  max-width: 650px;
+  background: rgba(0, 0, 0, 0.55);
+  padding: 16px 24px;
+  border-radius: 10px;
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.get-started-button {
+  padding: 12px 32px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 6px;
+  background: #4caf50;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.get-started-button:hover {
+  background: #388e3c;
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background: #2e7d32;
+  color: #ffffff;
+}
+
+.navbar a {
+  color: #ffffff;
+  margin: 0 14px;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Product listing ---------- */
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.product-card {
+  width: 200px;
+  background: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  padding: 12px;
+  text-align: center;
+}
+
+.product-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.product-card button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background: #4caf50;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.product-card button:disabled {
+  background: #aaaaaa;
+  cursor: not-allowed;
+}
+
+/* ---------- Shopping cart ---------- */
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #ffffff;
+  border-bottom: 1px solid #dddddd;
+  padding: 12px;
+}
+
+.cart-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.cart-item button {
+  padding: 4px 10px;
+  cursor: pointer;
+}
